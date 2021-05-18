@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BLL\TriviaOrchestratorContract\TriviaOrchestratorContract.csproj" />
+    <ProjectReference Include="..\..\BLL\TriviaOrchestratorImpl\TriviaOrchestratorImpl.csproj" />
+  </ItemGroup>
+
+
+</Project>

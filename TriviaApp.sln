@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{F9CD7F13-21A3-4012-AEDF-3C60AFC2F149}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{CB208798-F66D-425F-A01D-2E14003ACCFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{8E8FFD23-262A-4DCD-A452-DC35D49AF4F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriviaApi", "API\TriviaApi\TriviaApi.csproj", "{D39FE2A0-3CDC-48AD-AF19-E02BE3FE9313}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriviaOrchestratorContract", "BLL\TriviaOrchestratorContract\TriviaOrchestratorContract.csproj", "{4DC73CBB-EB5A-4044-A77D-F3407F615718}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriviaModels", "Shared\TriviaModels\TriviaModels.csproj", "{69C3B643-7421-4F8A-B427-D1DDB6C09997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriviaOrchestratorImpl", "BLL\TriviaOrchestratorImpl\TriviaOrchestratorImpl.csproj", "{EA4AE9ED-D923-42C5-8EBA-A127A062BA7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D39FE2A0-3CDC-48AD-AF19-E02BE3FE9313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39FE2A0-3CDC-48AD-AF19-E02BE3FE9313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39FE2A0-3CDC-48AD-AF19-E02BE3FE9313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39FE2A0-3CDC-48AD-AF19-E02BE3FE9313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC73CBB-EB5A-4044-A77D-F3407F615718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC73CBB-EB5A-4044-A77D-F3407F615718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC73CBB-EB5A-4044-A77D-F3407F615718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC73CBB-EB5A-4044-A77D-F3407F615718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C3B643-7421-4F8A-B427-D1DDB6C09997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C3B643-7421-4F8A-B427-D1DDB6C09997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C3B643-7421-4F8A-B427-D1DDB6C09997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C3B643-7421-4F8A-B427-D1DDB6C09997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA4AE9ED-D923-42C5-8EBA-A127A062BA7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4AE9ED-D923-42C5-8EBA-A127A062BA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4AE9ED-D923-42C5-8EBA-A127A062BA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4AE9ED-D923-42C5-8EBA-A127A062BA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D39FE2A0-3CDC-48AD-AF19-E02BE3FE9313} = {CB208798-F66D-425F-A01D-2E14003ACCFD}
+		{4DC73CBB-EB5A-4044-A77D-F3407F615718} = {F9CD7F13-21A3-4012-AEDF-3C60AFC2F149}
+		{69C3B643-7421-4F8A-B427-D1DDB6C09997} = {8E8FFD23-262A-4DCD-A452-DC35D49AF4F6}
+		{EA4AE9ED-D923-42C5-8EBA-A127A062BA7A} = {F9CD7F13-21A3-4012-AEDF-3C60AFC2F149}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {730822D8-89D5-4409-A1B7-D044EBBF9EDF}
+	EndGlobalSection
+EndGlobal
