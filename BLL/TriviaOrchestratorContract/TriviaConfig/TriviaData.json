@@ -2,8 +2,8 @@
   {
     "category": "Entertainment: Film",
     "type": "multiple",
-    "difficulty": "medium",
-    "question": "In the 1984 movie &quot;The Terminator&quot;, what model number is the Terminator portrayed by Arnold Schwarzenegger?",
+    "difficulty": "Medium",
+    "question": "In the 1984 movie \"The Terminator\", what model number is the Terminator portrayed by Arnold Schwarzenegger?",
     "correct_answer": "T-800",
     "incorrect_answers": [
       "I-950",
@@ -14,8 +14,8 @@
   {
     "category": "Entertainment: Film",
     "type": "multiple",
-    "difficulty": "medium",
-    "question": "Who directed the 1973 film &quot;American Graffiti&quot;?",
+    "difficulty": "Medium",
+    "question": "Who directed the 1973 film \"American Graffiti\"?",
     "correct_answer": "George Lucas",
     "incorrect_answers": [
       "Ron Howard",
@@ -26,7 +26,7 @@
   {
     "category": "Entertainment: Film",
     "type": "multiple",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "question": "Which town is the setting for the Disney movie The Love Bug (1968)?",
     "correct_answer": "San Francisco",
     "incorrect_answers": [
@@ -38,7 +38,7 @@
   {
     "category": "Entertainment: Film",
     "type": "multiple",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "question": "What character in the Winnie the Pooh films was added by Disney and does not appear in the original books?",
     "correct_answer": "Gopher",
     "incorrect_answers": [
@@ -50,7 +50,7 @@
   {
     "category": "Entertainment: Film",
     "type": "multiple",
-    "difficulty": "medium",
+    "difficulty": "Medium",
     "question": "Brendan Fraser starred in the following movies, except which one?",
     "correct_answer": "Titanic",
     "incorrect_answers": [
