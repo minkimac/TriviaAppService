@@ -1,15 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using TriviaOrchestratorContract;
 using TriviaOrchestratorImplementation;
 
@@ -32,6 +24,22 @@ namespace TriviaApi
             services.AddCors(c => c.AddPolicy("AllowOrigin", options => options.WithOrigins("http://localhost:4200")));
             services.AddCors(c => c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:4200")));
             services.AddCors(c => c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin()));
+
+            services.AddSwaggerDocument(config =>
+            {
+                config.PostProcess = document =>
+                {
+                    document.Info.Version = "v1";
+                    document.Info.Title = "Trivia Quiz API";
+                    document.Info.Description = "API to perform operations on trivia data";
+                    document.Info.Contact = new NSwag.OpenApiContact
+                    {
+                        Name = "Mayank Sharma",
+                        Email = "minkimac.work@gmail.com",
+                        Url = "https://twitter.com/minkimac"
+                    };
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +48,9 @@ namespace TriviaApi
             app.UseHttpsRedirection();
             app.UseCors(options => options.WithOrigins("http://localhost:4200").WithOrigins("https://localhost:4200"));
             app.UseRouting();
+
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             // global error handler
             app.UseMiddleware<CustomErrorHandler>();
