@@ -46,7 +46,7 @@ namespace TriviaApi
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseHttpsRedirection();
-            app.UseCors(options => options.WithOrigins("http://localhost:4200").WithOrigins("https://localhost:4200"));
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseRouting();
 
             app.UseOpenApi();
