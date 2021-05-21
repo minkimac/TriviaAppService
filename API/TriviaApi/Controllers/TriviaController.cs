@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
+using TriviaApi.Models;
+using TriviaModels.OutputModels;
 using TriviaOrchestratorContract;
 
 namespace TriviaApi.Controllers
@@ -18,6 +22,10 @@ namespace TriviaApi.Controllers
             _triviaOrchestrator = triviaOrchestrator;
         }
 
+        [ProducesResponseType(typeof(List<Trivia>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(TriviaException), (int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(TriviaException), (int)HttpStatusCode.Conflict)]
+        [ProducesResponseType(typeof(TriviaException), (int)HttpStatusCode.InternalServerError)]
         [HttpGet]
         public async Task<IActionResult> GetTrivia()
         {

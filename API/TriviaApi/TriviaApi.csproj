@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NSwag.AspNetCore" Version="13.11.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\BLL\TriviaOrchestratorContract\TriviaOrchestratorContract.csproj" />
     <ProjectReference Include="..\..\BLL\TriviaOrchestratorImpl\TriviaOrchestratorImpl.csproj" />
   </ItemGroup>
